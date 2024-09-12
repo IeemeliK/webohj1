@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	background: #333;
+	font-family: "Poppins", Helvetica, "Roboto", Arial;
+	color: #ddd;
+}
+
+.frontpage {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.testcontainer {
+	margin: auto;
+}
+
+header {
+	display: flex;
+	position: absolute;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+nav ul {
+	display: flex;
+	gap: 1.5rem;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+li a {
+	text-decoration: none;
+}
+
+a:is(:visited, :link) {
+	color: inherit;
+}
+
+nav .current {
+	font-weight: bold;
+}
