@@ -6,18 +6,16 @@ body {
 }
 
 .frontpage {
-	width: 100vw;
-	height: 100vh;
 	display: flex;
-}
-
-.testcontainer {
-	margin: auto;
+	height: 85vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
 }
 
 header {
 	display: flex;
-	position: absolute;
+	flex-wrap: wrap;
 	gap: 2rem;
 	justify-content: center;
 	align-items: center;
