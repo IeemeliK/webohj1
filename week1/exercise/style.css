@@ -11,6 +11,23 @@ body {
 	width: 100vw;
 	align-items: center;
 	justify-content: center;
+	flex-flow: column;
+}
+
+.name {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+small {
+	opacity: 0.7;
+}
+
+.profiilikuva {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
 
 header {
@@ -42,4 +59,15 @@ a:is(:visited, :link) {
 
 nav .current {
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	nav {
+		width: fit-content;
+		padding-right: 1rem;
+	}
 }
