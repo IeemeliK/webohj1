@@ -3,4 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+	nav li:hover {
+		text-decoration: underline;
+	}
+	html {
+		background-color: theme(colors.slate.200);
+		@media (prefers-color-scheme: dark) {
+			background-color: theme(colors.darkBg);
+			color: theme(colors.darkFont);
+		}
+	}
+}
