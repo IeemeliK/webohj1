@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="dark:bg-darkBg dark:text-darkFont bg-slate-200">
-    <header>
-      <h4 class="logo">Cool logo!</h4>
+    <header
+      class="flex flex-wrap h-16 gap-8 justify-center items-center sticky top-0"
+    >
       <nav>
-        <ul>
-          <li class="nav-item current"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="./cv.html">CV</a></li>
-          <li class="nav-item"><a href="./hobbies.html">Hobbies</a></li>
-          <li class="nav-item"><a href="./contact.html">Contact me!</a></li>
+        <ul class="flex gap-6 p-0 ml-8">
+          <li class="font-bold"><a href="#">Home</a></li>
+          <li><a href="./cv.html">CV</a></li>
+          <li><a href="./hobbies.html">Hobbies</a></li>
+          <li><a href="./contact.html">Contact me!</a></li>
         </ul>
       </nav>
     </header>
-    <main class="frontpage">
+    <main class="flex flex-col h-dvh w-dvw items-center justify-center">
       <picture>
-        <source srcset="./assets/profiilikuva.png" type="image/png" />
         <source srcset="./assets/profiilikuva.webp" type="image/webp" />
+        <source srcset="./assets/profiilikuva.png" type="image/png" />
         <img
-          src="./assets/profiilikuva.webp"
+          src="./assets/profiilikuva.png"
           alt="profiilikuva"
-          class="profiilikuva"
+          class="object-cover size-44 md:size-52 rounded-full"
         />
       </picture>
-      <div class="namecontainer">
-        <h1 class="name">Eemeli Koikkalainen</h1>
-        <small>Software developer</small>
+      <div>
+        <h1 class="md:text-5xl mb-0 mt-4 text-4xl">Eemeli Koikkalainen</h1>
+        <small class="relative text-xs opacity-70 bottom-1">
+          Software developer
+        </small>
       </div>
     </main>
   </body>
