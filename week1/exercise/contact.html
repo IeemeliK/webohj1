@@ -19,5 +19,66 @@
         </ul>
       </nav>
     </header>
+    <main class="flex flex-col items-center justify-center mt-32">
+      <h1 class="text-3xl mb-6">Contact Me</h1>
+      <form
+        class="flex flex-col gap-4 w-full max-w-md"
+        action="#"
+        method="post"
+      >
+        <label for="name" class="flex flex-col">
+          Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="border p-2 rounded"
+            required
+          />
+        </label>
+        <label for="age" class="flex flex-col">
+          Age:
+          <input
+            type="number"
+            id="age"
+            name="age"
+            class="border p-2 rounded"
+            required
+          />
+        </label>
+        <label for="email" class="flex flex-col">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="border p-2 rounded"
+            required
+          />
+        </label>
+        <label for="message" class="flex flex-col">
+          Message:
+          <textarea
+            id="message"
+            name="message"
+            class="border p-2 rounded h-36"
+            rows="5"
+            required
+          ></textarea>
+        </label>
+        <label for="source" class="flex flex-col">
+          How did you hear about me?
+          <select id="source" name="source" class="border p-2 rounded" required>
+            <option value="google">Google</option>
+            <option value="friend">From a friend</option>
+            <option value="linkedin">From LinkedIn</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <button type="submit" class="bg-blue-500 p-2 rounded hover:bg-blue-600">
+          Send
+        </button>
+      </form>
+    </main>
   </body>
 </html>
