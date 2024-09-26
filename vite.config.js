@@ -1,16 +1,15 @@
 import { defineConfig } from "vite";
 import tailwindcss from "tailwindcss";
-import path from "node:path";
-
-const files = ["index.html", "cv.html", "hobbies.html", "contact.html"];
+import { resolve } from "path";
+import { globSync } from "glob";
 
 export default defineConfig({
 	build: {
 		rollupOptions: {
 			input: Object.fromEntries(
-				files.map((file) => [
+				globSync("./*.html").map((file) => [
 					file.replace(".html", ""),
-					path.resolve(__dirname, file),
+					resolve(__dirname, file),
 				]),
 			),
 		},
