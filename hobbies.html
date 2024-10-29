@@ -21,10 +21,15 @@
     </header>
     <main class="flex flex-col h-5/6 justify-center items-center">
       <h2 class="text-3xl font-bold mt-5">My Hobbies:</h2>
+      <ul class="list-disc mt-4 space-y-2 text-lg">
+        <li>Swimming</li>
+        <li>Video Games</li>
+        <li>Disc Golf</li>
+        <li>Programming</li>
+        <li>Walking</li>
+      </ul>
       <h2 class="text-3xl font-bold mt-5">My favorite show:</h2>
       <iframe
-        width="640"
-        height="360"
         src="https://www.youtube.com/embed/x4ztgjvfU60"
         title="Cyberpunk: Edgerunners | Official Teaser | Netflix"
         frameborder="0"
@@ -32,9 +37,11 @@
         referrerpolicy="strict-origin-when-cross-origin"
         loading="lazy"
         allowfullscreen
-        class="mt-5"
+        class="mt-5 container max-w-screen-md px-3 md:p-0 aspect-video"
       ></iframe>
-      <h2 class="text-3xl font-bold mt-5">One of my favorite songs:</h2>
+      <h2 class="text-3xl font-bold mt-5 text-center">
+        One of my favorite songs:
+      </h2>
       <iframe
         src="https://open.spotify.com/embed/track/1eOYox5H9f7EP1YWpJpabe?utm_source=generator&theme=0"
         frameborder="0"
@@ -42,7 +49,7 @@
         width="100%"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-        class="mt-5 min-h-40 max-w-xl"
+        class="mt-5 px-3 min-h-40 max-w-xl"
       ></iframe>
     </main>
   </body>
