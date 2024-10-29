@@ -3,15 +3,15 @@ import tailwindcss from "tailwindcss";
 import { resolve } from "path";
 import { globSync } from "glob";
 
+const paths = {};
+for (const file of globSync("./*.html")) {
+	paths[file.replace(".html", "")] = resolve(file);
+}
+
 export default defineConfig({
 	build: {
 		rollupOptions: {
-			input: Object.fromEntries(
-				globSync("./*.html").map((file) => [
-					file.replace(".html", ""),
-					resolve(__dirname, file),
-				]),
-			),
+			input: paths,
 		},
 	},
 	base: "",
